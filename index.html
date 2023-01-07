@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="LuMalNati Pizza is the best pizza ever, 365 days per year. It's tailored to your personal tastes and nutritional needs."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/favicon-lu.jpg">
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"  rel="stylesheet"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet"  href="css/general.css"/>
+    <link rel="stylesheet"  href="css/style.css" />
+    <link rel="stylesheet"  href="css/queries.css" />
+    <script
+      type="module"  src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""  src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js">
+  </script>
+    <script type="module" defer src="js/app.js"></script>
+<!--    <script type="module" defer src="js/login.js"></script>-->
+    <script type="module" defer src="js/cart.js"></script>
+    <title>LuMalNati &mdash; My Pizza!</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <a> <img class="logo"  alt="LuMalNati logo" src="img/LuLogo.jpg" /> </a>
+
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="#meals">Meals</a></li>
+          <li>
+            <a class="main-nav-link" href="#testimonials">Testimonials</a>
+          </li>
+          <li>
+            <button
+              id="cart-button" class="main-nav-link nav-btn"> Cart
+              <i class="fa fa-shopping-cart" > </i>
+            </button>
+          </li>
+            <li><button class="main-nav-link nav-btn" id="login-button" >Login</button></li>
+        </ul>
+      </nav>
+
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+    </header>
+
+    <main>
+      <section class="section-hero" id="hero">
+        <div class="hero">
+          <div class="hero-text-box">
+            <h1 class="heading-primary">
+              A Tasty Pizza is waiting you, every single day
+            </h1>
+            <p class="hero-description">
+              We have dine-in restaurant and carryout services,
+              so before you settle on a location,
+              make sure they accommodate what you’re looking for!
+            </p>
+            <a href="#cta" class="btn btn--full margin-right-sm" id="anima" >Sign-Up now!</a>
+
+            <div class="delivered-meals">
+              <div class="delivered-imgs">
+                <img src="img/customers/customer-1.jpg" alt="Customer photo" />
+                <img src="img/customers/customer-2.jpg" alt="Customer photo" />
+                <img src="img/customers/customer-3.jpg" alt="Customer photo" />
+                <img src="img/customers/customer-4.jpg" alt="Customer photo" />
+                <img src="img/customers/customer-5.jpg" alt="Customer photo" />
+                <img src="img/customers/customer-6.jpg" alt="Customer photo" />
+              </div>
+              <p class="delivered-text">
+                <span>5,000+</span> pizzas delivered every year!
+              </p>
+            </div>
+          </div>
+          <div class="hero-img-box">
+            <img  class= "hero-img" src="img/pizza4.jpg" alt="pizza">
+          </div>
+        </div>
+      </section>
+
+      <section class="section-featured">
+        <div class="container">
+          <h2 class="heading-featured-in">We work with:</h2>
+          <div class="logos">
+            <img src="img/logos/Just-Eat.png" alt="Just Eat logo" />
+            <img src="img/logos/delivery-hero.png" alt="Delivery Hero logo"/>
+            <img src="img/logos/Cibus_Sodexo_Logo.jpg"  alt="Cibus logo"/>
+            <img src="img/logos/Ubereats.png" alt="UberEats logo" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section-meals" id="meals">
+        <div class="container center-text">
+          <span class="subheading">Pizzas</span>
+          <h2 class="heading-secondary">Pizzas are made with love</h2>
+        </div>
+
+        <div  class="container section-meals-container grid grid--3-cols margin-bottom-md">
+          <div class="toppings">
+            <h3 class="heading-tertiary">We are proud of our toppings:</h3>
+            <ul class="list">
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>Extra cheese</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>Bell Pepper</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>Anchovy</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>Corn</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>Sweet-Potato</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>Bacon</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>Pepperoni</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>Tuna</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>Pineapple</span>
+              </li>
+            </ul>
+          </div>
+
+          <div data-meal-id="1" class="meal">
+            <img src="img/meat-pizza.jpg" class="meal-img"   alt="Pepperoni and Ham Pizza "/>
+            <div class="meal-content">
+              <div class="meal-tags">
+                <span class="tag tag--notkosher">Not Kosher</span>
+              </div>
+              <p class="meal-title">Meat Mix Pizza</p>
+              <ul class="meal-attributes">
+                <li class="meal-attribute">
+                  <ion-icon class="meal-icon" name="flame-outline"></ion-icon>
+                  <span><strong>650</strong> calories</span>
+                </li>
+                <li class="meal-attribute">
+                  <ion-icon
+                    class="meal-icon"
+                    name="restaurant-outline"
+                  ></ion-icon>
+                  <span><strong>Toppings:</strong> Ham, Pepperoni</span>
+                </li>
+                <li class="meal-attribute">
+                  <ion-icon class="meal-icon" name="cash-outline"></ion-icon>
+                  <span><strong>Price:</strong> 70 &#8362</span>
+                </li>
+                 <button type="submit" class="btn btn--form add-to-cart-button">Add to cart</button>
+              </ul>
+            </div>
+          </div>
+
+          <div data-meal-id="2" class="meal">
+            <img src="img/Pizza2.jpg" class="meal-img"  alt="Mix Vegetable and Meat Pizza" />
+            <div class="meal-content">
+              <div class="meal-tags">
+                <span class="tag tag--notkosher">Not Kosher</span>
+                <span class="tag tag--herbs">Herbs</span>
+              </div>
+              <p class="meal-title">Meat & Vegetable Pizza</p>
+              <ul class="meal-attributes">
+                <li class="meal-attribute">
+                  <ion-icon class="meal-icon" name="flame-outline"></ion-icon>
+                  <span><strong>700</strong> calories</span>
+                </li>
+                <li class="meal-attribute">
+                  <ion-icon class="meal-icon" name="restaurant-outline"> </ion-icon>
+                  <span> <strong>Toppings: </strong> Olives, Bell Pepper, Bacon</span>
+                </li>
+                <li class="meal-attribute">
+                  <ion-icon class="meal-icon" name="cash-outline"></ion-icon>
+                  <span><strong>Price:</strong> 75 &#8362</span> </li>
+                <button type="submit" class="btn btn--form add-to-cart-button">Add to cart</button>
+              </ul>
+            </div>
+          </div>
+
+          <div data-meal-id="3" class="meal meal-extra hidden">
+            <img src="img/Pizza-margherita.jpg" class="meal-img"  alt="Pizza margherita" />
+            <div class="meal-content">
+              <div class="meal-tags">
+                <span class="tag tag--kosher">Kosher</span>
+              </div>
+              <p class="meal-title">Pizza Margherita</p>
+              <ul class="meal-attributes">
+                <li class="meal-attribute">
+                  <ion-icon class="meal-icon" name="flame-outline"></ion-icon>
+                  <span><strong>470</strong> calories</span>
+                </li>
+                <li class="meal-attribute">
+                  <ion-icon class="meal-icon" name="restaurant-outline"> </ion-icon>
+                  <span> <strong>Toppings: </strong> Basil, Mozzarella cheese</span>
+                </li>
+                <li class="meal-attribute">
+                  <ion-icon class="meal-icon" name="cash-outline"></ion-icon>
+                  <span><strong>Price:</strong> 55 &#8362</span> </li>
+                <button type="submit" class="btn btn--form add-to-cart-button">Add to cart</button>
+              </ul>
+            </div>
+          </div>
+
+           <div data-meal-id="4" class="meal meal-extra hidden">
+            <img src="img/hawaiian-pizza.jpg" class="meal-img"  alt="Hawaiian Pizza" />
+            <div class="meal-content">
+              <div class="meal-tags">
+                <span class="tag tag--notkosher">Not Kosher</span>
+              </div>
+              <p class="meal-title">Hawaiian Pizza</p>
+              <ul class="meal-attributes">
+                <li class="meal-attribute">
+                  <ion-icon class="meal-icon" name="flame-outline"></ion-icon>
+                  <span><strong>750</strong> calories</span>
+                </li>
+                <li class="meal-attribute">
+                  <ion-icon class="meal-icon" name="restaurant-outline"> </ion-icon>
+                  <span> <strong>Toppings: </strong> Pineapple, Ham</span>
+                </li>
+                <li class="meal-attribute">
+                  <ion-icon class="meal-icon" name="cash-outline"></ion-icon>
+                  <span><strong>Price:</strong> 80 &#8362</span> </li>
+              <button type="submit" class="btn btn--form add-to-cart-button">Add to cart</button>
+              </ul>
+            </div>
+          </div>
+
+         <div data-meal-id="5" class="meal meal-extra hidden">
+            <img src="img/Pizza1.jpg" class="meal-img"  alt="Crazy Lu" />
+            <div class="meal-content">
+              <div class="meal-tags">
+                <span class="tag tag--notkosher">Not Kosher</span>
+                <span class="tag tag--herbs">Herbs</span>
+              </div>
+              <p class="meal-title"> Crazy Lu! </p>
+              <ul class="meal-attributes">
+                <li class="meal-attribute">
+                  <ion-icon class="meal-icon" name="flame-outline"></ion-icon>
+                  <span><strong>700</strong> calories</span>
+                </li>
+                <li class="meal-attribute">
+                  <ion-icon class="meal-icon" name="restaurant-outline"> </ion-icon>
+                  <span> <strong>Toppings: </strong> Lus' specials</span>
+                </li>
+                <li class="meal-attribute">
+                  <ion-icon class="meal-icon" name="cash-outline"></ion-icon>
+                  <span><strong>Price:</strong> 95 &#8362</span> </li>
+              <button type="submit" class="btn btn--form add-to-cart-button">Add to cart</button>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="container all-recipes">
+          <button class="see-all-recipes btn btn--form" >See all recipes &rarr;</button>
+        </div>
+      </section>
+
+
+
+      <section class="section-testimonials" id="testimonials">
+        <div class="testimonials-container">
+          <span class="subheading">Testimonials</span>
+          <h2 class="heading-secondary">Once you try it, you can't go back</h2>
+
+          <div class="testimonials">
+            <figure class="testimonial">
+              <img
+                class="testimonial-img"
+                alt="Photo of customer Dave Bryson"
+                src="img/customers/dave.jpg"
+              />
+              <blockquote class="testimonial-text">
+                Very recommended! A great local place.
+                The pizza came real quick, Fresh sauce, nice and genuine
+                toppings and very good service!
+              </blockquote>
+              <p class="testimonial-name">&mdash; Dave Bryson</p>
+            </figure>
+
+            <figure class="testimonial">
+              <img
+                class="testimonial-img"
+                alt="Photo of customer Ben Hadley"
+                src="img/customers/ben.jpg"
+              />
+              <blockquote class="testimonial-text">
+               This was one of the few places to eat in near our hotel.
+                The food was tasty and reasonably priced.
+                The staff were pleasant and helpful.
+              </blockquote>
+              <p class="testimonial-name">&mdash; Ben Hadley</p>
+            </figure>
+
+            <figure class="testimonial">
+              <img
+                class="testimonial-img"
+                alt="Photo of customer Steve Miller"
+                src="img/customers/steve.jpg"
+              />
+              <blockquote class="testimonial-text">
+                I have eaten here for the past 2 nights
+                and highly recommend it.
+                The food is amazing,
+                if you are in the area it’s not to be missed.
+              </blockquote>
+              <p class="testimonial-name">&mdash; Steve Miller</p>
+            </figure>
+
+            <figure class="testimonial">
+              <img
+                class="testimonial-img"
+                alt="Photo of customer Hannah Smith"
+                src="img/customers/hannah.jpg"
+              />
+              <blockquote class="testimonial-text">
+               Absolutely the best Pizza in the Middle East.
+               When I am in a hurry I always go there
+               Excellent service and food.
+              </blockquote>
+              <p class="testimonial-name">&mdash; Hannah Smith</p>
+            </figure>
+          </div>
+        </div>
+
+        <div class="gallery">
+          <figure class="gallery-item">
+            <img src="img/gallery/gallery-pic1.jpg" alt="Photo of beautifully arranged food"/>
+          </figure>
+          <figure class="gallery-item">
+            <img src="img/gallery/gallery-pic9.jpg" alt="Photo of beautifully arranged food"/>
+          </figure>
+          <figure class="gallery-item">
+            <img src="img/gallery/pizzasharing.jpg" alt="Photo of beautifully arranged food"/>
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="img/pizzaBack.jpg" alt="Photo of beautifully arranged food"/>
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="img/gallery/gallery-5.jpg" alt="Photo of beautifully arranged food"/>
+          </figure>
+          <figure class="gallery-item">
+            <img src="img/gallery/pizzapho.jpg" alt="Photo of beautifully arranged food"/>
+          </figure>
+        </div>
+      </section>
+
+        <div class="container grid">
+          <aside class="plan-details">
+            Prices include all applicable taxes.
+          </aside>
+        </div>
+
+        <div class="container grid grid--4-cols">
+          <div class="feature">
+            <ion-icon class="feature-icon" name="bulb-outline"></ion-icon>
+            <p class="feature-title">Did you know?</p>
+            <p class="feature-text">
+             LuMalNati hires employees of all types regardless gender color or ethnicity.
+            </p>
+          </div>
+          <div class="feature">
+            <ion-icon class="feature-icon" name="nutrition-outline"></ion-icon>
+            <p class="feature-title">Local-and-Organic</p>
+            <p class="feature-text">
+            Our chefs only use fresh, and organic ingredients to prepare
+              your pizzas.
+            </p>
+          </div>
+          <div class="feature">
+            <ion-icon class="feature-icon" name="leaf-outline"></ion-icon>
+            <p class="feature-title">Earth-Safe</p>
+            <p class="feature-text">
+              All our suppliers only send us reusable containers to package all your
+              pizzas.
+            </p>
+          </div>
+          <div class="feature">
+            <ion-icon class="feature-icon" name="ear-outline"></ion-icon>
+            <p class="feature-title">Listen!</p>
+            <p class="feature-text">
+              It is the noise of our crispy dough when you bite it!
+              Try yourself!
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section name="cta" class="section-cta" id="cta">
+        <div class="container">
+          <div class="cta">
+            <div class="cta-text-box">
+              <h2 class="heading-secondary">Sign-up it is fast and easy!</h2>
+              <p class="cta-text">
+                We do everything in our power to ease processes for our customers
+                in every aspect, Thank you for choosing us.
+              </p>
+
+              <form class="cta-form sign-up-form" name="sign-up" >
+                <div>
+                   <div id="toasts"></div>
+                  <label   for="first-name">First Name</label>
+                  <input id="first-name" type="text" placeholder="John" name="first-name" />
+                </div>
+                <div>
+                  <label for="last-name">Last Name</label>
+                  <input id="last-name" type="text" placeholder="Smith" name="last-name" />
+                </div>
+                <div>
+                  <label for="email">Email Address</label>
+                  <input id="email" type="email" placeholder="me@example.com" name="email" />
+                </div>
+
+                <div>
+                  <label for="password">Password</label>
+                  <input id="password" type="password" placeholder="********" name="password"/>
+                </div>
+                <button type="submit" id="formVal" class="btn btn--form" >Sign up now</button>
+              </form>
+            </div>
+             <div class="cta-img-box" role="img" aria-label="Woman enjoying food">
+             </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container grid grid--footer">
+        <div class="logo-col">
+          <a href="#" class="footer-logo"> <img class="logo" alt="LuMalNati logo" src="img/LuLogo.jpg" /></a>
+          <ul class="social-links">
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-instagram"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-twitter"></ion-icon
+              ></a>
+            </li>
+          </ul>
+
+          <p class="copyright">
+            Copyright &copy; <span>2022</span> by LuMalNati's, Inc.
+            All rights reserved.
+          </p>
+        </div>
+
+        <div class="address-col">
+          <p class="footer-heading">Contact us</p>
+          <address class="contacts">
+            <p class="address"> Derech Metsada St., 2nd Floor, BeerSheba, Israel 942107</p>
+            <p>
+              <a class="footer-link" href="tel:0509131361">050-913-1360</a ><br />
+              <a class="footer-link" href="mailto:hello@LuMalNati's.com"> hello@LuMalNati's.com</a>
+            </p>
+          </address>
+        </div>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Account</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Create account</a></li>
+            <li><a class="footer-link" href="#">Sign in</a></li>
+            <li><a class="footer-link" href="#">iOS app</a></li>
+            <li><a class="footer-link" href="#">Android app</a></li>
+          </ul>
+        </nav>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Company</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">About Us</a></li>
+            <li><a class="footer-link" href="#">For Business</a></li>
+            <li><a class="footer-link" href="#">Cooking partners</a></li>
+            <li><a class="footer-link" href="#">Careers</a></li>
+          </ul>
+        </nav>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Resources</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Recipe directory </a></li>
+            <li><a class="footer-link" href="#">Help center</a></li>
+            <li><a class="footer-link" href="#">Privacy & terms</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+
+    <div class="cart-container-overlay hidden"></div>
+    <div class="cart-container hidden">
+      <div class="cart-header">
+        <h3 class="cart-heading">Shopping Cart</h3>
+        <h5 class="cart-action">Remove all</h5>
+        </div>
+        <div class="cart-items"></div>
+
+          <hr class="cart-hr">
+          <div class="cart-checkout">
+            <div class="cart-total">
+            <div>
+            <div class="cart-subtotal">Sub-Total</div>
+            <div class="cart-items-total">0 items</div>
+            </div>
+            <div class="cart-total-amount">$0</div>
+            </div>
+            <button class="cart-submit-button">Checkout</button>
+          </div>
+      </div>
+  </body>
+</html>

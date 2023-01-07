@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza login</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Muli:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet"   href="css/login.css">
+    <link rel="stylesheet"   href="css/style.css">
+    <link rel="stylesheet"   href="css/general.css">
+</head>
+<body>
+  <header class="header">
+      <a> <img class="logo"  alt="LuMalNati logo" src="img/LuLogo.jpg" /> </a>
+
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="/index.html#meals" onclick="window.open('index.html#meals', '_self')" >Meals</a></li>
+          <li>
+            <a class="main-nav-link" href="/index.html#testimonials" onclick="window.open('index.html#testimonials','_self')">Testimonials</a>
+          </li>
+          <li><button  class="main-nav-link nav-btn"> Cart <i class="fa fa-shopping-cart" > </i>
+            </button></li>
+            <li><button class="main-nav-link nav-btn"  href="/index.html">Login</button></li>
+        </ul>
+      </nav>
+
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+    </header>
+
+    <div class="main-container">
+
+        <div class="form-container">
+            <div class="form-body">
+                <h2 class="title">Login</h2>
+
+                <form class="the-form login-form">
+
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Enter your email">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" placeholder="Enter your password">
+                    <button type="submit" class="login-btn">
+                      Login
+                    </button>
+
+                </form>
+
+            </div><!-- FORM BODY-->
+
+            <div class="form-footer">
+                <div>
+                    <span>Don't have an account?</span> <a  id="signup"  href="/index.html#cta" onclick="window.open('index.html#cta', '_self')">Sign Up</a>
+                </div>
+            </div><!-- FORM FOOTER -->
+
+        </div><!-- FORM CONTAINER -->
+    </div>
+
+    <script type="module"  src="js/login.js"></script>
+</body>
+</html>
